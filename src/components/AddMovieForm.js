@@ -21,6 +21,7 @@ export default function AddMovieForm({ onAddMovie }) {
     setTitle(e.target.value);
   };
 
+
   return (
     <form onSubmit={handleSubmit}>
       <input value={title} onChange={handleTitleChange} placeholder="Movie Title"></input>
