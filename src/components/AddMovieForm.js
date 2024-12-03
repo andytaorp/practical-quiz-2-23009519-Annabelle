@@ -24,7 +24,7 @@ export default function AddMovieForm({ onAddMovie }) {
   return (
     <form onSubmit={handleSubmit}>
       <input value={title} onChange={handleTitleChange} placeholder="Movie Title"></input>
-      <button onSubmit={handleSubmit}>Submit</button>
+      <button>Add Movie</button>
     </form>
   ); // TODO: add a form to add a new movie
 }

@@ -7,11 +7,12 @@ function App() {
 
   const handleAddMovie = (title) => {
     // TODO: Implement adding a new movie to the list
-    setMovies((prevTitle) => [...prevTitle, title]);
+    setMovies((movies) => [...movies, title]);
   };
 
   const handleToggleWatched = (id) => {
     // TODO: Implement toggling a movie's watched status
+    setMovies((movies) => movies.filter((movie)))
   };
 
   const handleDeleteMovie = (id) => {
