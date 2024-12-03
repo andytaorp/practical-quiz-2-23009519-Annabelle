@@ -7,6 +7,7 @@ function App() {
 
   const handleAddMovie = (title) => {
     // TODO: Implement adding a new movie to the list
+    setMovies((prevTitle) => [...prevTitle, title]);
   };
 
   const handleToggleWatched = (id) => {
@@ -21,6 +22,7 @@ function App() {
     <div>
       <h1>Favorite Movies</h1>
       {/* TODO: Add AddMovieForm Component */}
+      <AddMovieForm addMovies={handleAddMovie} />
       {/* TODO: Add MovieList Component */}
     </div>
   );
