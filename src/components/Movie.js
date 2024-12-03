@@ -6,7 +6,7 @@ import React from "react";
  * watched, a text span for the title, and a delete button.
  */
 
-function Movie({ movie, onDeleteMovie, onToggleWatched }) {
+export default function Movie({ movie, onDeleteMovie, onToggleWatched }) {
   return (
     <li>
       <input
@@ -20,6 +20,4 @@ function Movie({ movie, onDeleteMovie, onToggleWatched }) {
       <button onClick={() => onDeleteMovie(movie.id)}>Delete</button>
     </li>
   );
-}
-
-export default Movie;
+};

@@ -26,7 +26,7 @@ function App() {
     <div>
       <h1>Favorite Movies</h1>
       {/* TODO: Add AddMovieForm Component */}
-      <AddMovieForm addMovies={handleAddMovie} />
+      <AddMovieForm onAddMovie={handleAddMovie} />
       {/* TODO: Add MovieList Component */}
       <MovieList movies={movies} onToggleWatched={handleToggleWatched} onDeleteMovie={handleDeleteMovie} />
     </div>

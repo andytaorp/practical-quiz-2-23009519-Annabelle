@@ -13,19 +13,21 @@ export default function AddMovieForm({ onAddMovie }) {
       title,
       watched: false,
     };
-    AddMovieForm(newMovie);
+    onAddMovie(newMovie);
     setTitle("");
   };
 
-  function handleTitleChange(e) {
+  const handleTitleChange = (e) => {
     setTitle(e.target.value);
+    console.log("Title:", e.target.value);
   };
+  
 
 
   return (
     <form onSubmit={handleSubmit}>
       <input value={title} onChange={handleTitleChange} placeholder="Movie Title"></input>
-      <button>Add Movie</button>
+      <button type="submit">Add Movie</button>
     </form>
   ); // TODO: add a form to add a new movie
 }
